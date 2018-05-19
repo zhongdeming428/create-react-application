@@ -1,0 +1,22 @@
+{
+  "name": "create-react-application",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "commander": "^2.15.1",
+    "cross-spawn": "^6.0.5",
+    "fs-extra": "^6.0.1",
+    "validate-npm-package-name": "^3.0.0"
+  },
+  "bin": {
+    "create-react-application": "./packages/create-react.js"
+  }
+}
