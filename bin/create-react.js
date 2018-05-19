@@ -23,6 +23,9 @@ const program = commander
 
 if(projectName == undefined) {
     console.log(chalk.red('Please pass the project name while using create-react!'));
+    console.log(chalk.green('for example:'))
+    console.log();
+    console.log('create-react-application react-app');
 }
 else {
     const validateResult = validateProjectName(projectName);

@@ -2,7 +2,7 @@
   "name": "create-react-application",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./packages/create-react.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,6 +17,6 @@
     "validate-npm-package-name": "^3.0.0"
   },
   "bin": {
-    "create-react-application": "./packages/create-react.js"
+    "create-react-application": "bin/create-react.js"
   }
 }
