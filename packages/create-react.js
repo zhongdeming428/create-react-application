@@ -8,7 +8,7 @@ const validateProjectName = require('validate-npm-package-name');
 const packageJson = require('../package.json');
 
 let projectName;
-let devDependencies = ['html-webpack-plugin', 'clean-webpack-plugin', 'webpack-dev-server', 'css-loader', 'webpack-merge', 'style-loader', 'babel-preset-env', 'babel-loader', 'babel-polyfill', 'babel-preset-react'];
+let devDependencies = ['webpack', 'webpack-cli', 'html-webpack-plugin', 'clean-webpack-plugin', 'webpack-dev-server', 'css-loader', 'webpack-merge', 'style-loader', 'babel-preset-env', 'babel-loader', 'babel-polyfill', 'babel-preset-react'];
 let dependencies = ['react', 'react-dom'];
 
 const program = commander
@@ -60,6 +60,14 @@ function installAll() {
                 }
                 else {
                     console.log(chalk.green('Installation completed successfully!'));
+                    console.log();
+                    console.log(chalk.green('Start the local server with : '))
+                    console.log();
+                    console.log(chalk.cyan('    npm run start'))
+                    console.log();
+                    console.log(chalk.green('or build your app via :'));
+                    console.log();
+                    console.log(chalk.cyan('    npm run build'));
                 }
             })
         }
